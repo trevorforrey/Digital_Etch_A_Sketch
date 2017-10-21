@@ -1,0 +1,22 @@
+{
+  "name": "digital_etch_a_sketch",
+  "version": "1.0.0",
+  "description": "digital community art piece",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorforrey/digital_etch_a_sketch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorforrey/digital_etch_a_sketch/issues"
+  },
+  "homepage": "https://github.com/trevorforrey/digital_etch_a_sketch#readme",
+  "dependencies": {
+    "firebase": "^4.6.0"
+  }
+}
