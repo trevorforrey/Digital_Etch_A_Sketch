@@ -11,6 +11,7 @@ var config = {
 firebase.initializeApp(config);
 
 let database = firebase.database();
+console.log("up and running");
 
 function exampleWrite(userId, name, email) {
   firebase.database().ref('users/' + userId).set({
@@ -28,3 +29,9 @@ function exampleRead(userId) {
 exampleWrite(007, 'Trevor', 'hello@gmail.com');
 exampleRead(007);
 exampleWrite(007, 'Trevor', 'goodbye@gmail.com');
+
+let topRef = firebase.database().ref("/drawBoard/topLeft");
+topRef.on("value", function(snapshot) {
+  let newColor = snapshot.val();
+  document.getElementById('topLeft').setAttribute('style', 'background-color: ' + newColor + ';');
+});
