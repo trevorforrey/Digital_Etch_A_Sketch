@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/trevorforrey/digital_etch_a_sketch#readme",
   "dependencies": {
-    "firebase": "^4.6.0"
+    "firebase": "^4.6.1",
+    "vue": "^2.5.3",
+    "vuefire": "^1.4.4"
   }
 }
